@@ -32,6 +32,6 @@ jobs:
          - name: Pull image from docker hub
            run: docker pull altoel/aicc6_task_front:latest
          - name: Delete existing container
-           run: docker rm -f reactContainer
+           run: docker rm -f task-container
          - name: Run container
            run: docker run -d -p 80:80 --name reactContainer altoel/aicc6_task_front
